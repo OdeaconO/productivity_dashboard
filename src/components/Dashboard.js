@@ -15,8 +15,7 @@ const AVAILABLE_WIDGETS = {
 };
 
 export default function Dashboard() {
-  const { layout, updateLayout, toggleWidget, moveWidget } =
-    useDashboardLayout();
+  const { layout, toggleWidget, moveWidget } = useDashboardLayout();
   const [showCustomizer, setShowCustomizer] = useState(false);
 
   return (
