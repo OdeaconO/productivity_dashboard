@@ -24,7 +24,7 @@
 }
 
 .work-time {
-  color: #e74c3c;
+  color: #87fff3;
 }
 .break-time {
   color: #27ae60;
@@ -152,7 +152,7 @@
 .progress-bar {
   flex: 1;
   height: 10px;
-  background: #e0e0e0;
+  background: #fffa98;
   border-radius: 5px;
   overflow: hidden;
 }

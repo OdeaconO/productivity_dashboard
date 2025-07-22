@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# 🧠 Productivity Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Productivity Dashboard is a personal productivity tool designed to help users stay focused, plan effectively, and stay motivated throughout the day. It features four customizable widgets, each targeting a different aspect of personal productivity, along with a customization panel to tailor the dashboard to individual preferences.
 
-## Available Scripts
+## ✅ Features
 
-In the project directory, you can run:
+### ⏲️ Pomodoro Timer
 
-### `npm start`
+Implements the Pomodoro Technique, a time management method that breaks work into focused 25-minute sessions followed by short breaks. This encourages deep work and helps reduce mental fatigue over time. Users can start or reset the timer as needed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📝 Daily Planner
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Provides a lightweight task manager for day-to-day planning. Users can add tasks, mark them as complete, or remove them once they're no longer needed. This helps with organizing daily responsibilities and maintaining focus throughout the day.
 
-### `npm test`
+### 🎯 Goals Tracker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A long-term goal tracking widget where users can add personal goals and visualize their progress through an interactive progress bar. Users can increment or decrement progress in 10% steps, making it easier to track gradual improvement. Completed goals can also be removed.
 
-### `npm run build`
+### 💬 Motivational Quotes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Displays randomly selected motivational quotes to keep users inspired and uplifted. Users can refresh the quote anytime to view a new one and maintain a positive mindset during work sessions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ⚙️ Customization Panel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The dashboard includes a customization menu that allows users to reorder the priority of widgets and toggle their visibility. This makes the dashboard adaptable to various user workflows and productivity styles.

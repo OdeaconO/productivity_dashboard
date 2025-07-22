@@ -1,6 +1,5 @@
 .widget-customizer {
-  background: white;
-  border: 1px solid #ddd;
+  background: rgb(0, 0, 0);
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -13,12 +12,11 @@
   align-items: center;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
 }
 
 .customizer-header h3 {
   margin: 0;
-  color: #333;
+  color: #ffffff;
 }
 
 .close-btn {
@@ -26,7 +24,7 @@
   border: none;
   font-size: 1.5em;
   cursor: pointer;
-  color: #999;
+  color: #ffffff;
 }
 
 .widget-control {
@@ -41,6 +39,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #ffffff;
 }
 
 .widget-actions {
@@ -50,8 +49,8 @@
 
 .widget-actions button {
   padding: 5px 10px;
-  border: 1px solid #ddd;
-  background: white;
+  color: white;
+  background: #007bff;
   border-radius: 3px;
   cursor: pointer;
 }
