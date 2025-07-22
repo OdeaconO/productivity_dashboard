@@ -1,14 +1,13 @@
 .widget {
-  background: white;
+  background: rgb(0, 0, 0);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
 }
 
 .widget h3 {
   margin: 0 0 15px 0;
-  color: #333;
+  color: #ffffff;
   font-size: 1.2em;
 }
 
@@ -33,7 +32,7 @@
 
 .timer-status {
   font-size: 1.1em;
-  color: #666;
+  color: #ffffff;
 }
 
 .timer-controls {
@@ -61,8 +60,17 @@
 .task-input {
   flex: 1;
   padding: 8px;
-  border: 1px solid #ddd;
   border-radius: 4px;
+  background: #1b1b1b;
+}
+
+.add-task-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
 }
 
 .task-item {
@@ -80,6 +88,7 @@
 
 .task-text {
   flex: 1;
+  color: #ffffff;
 }
 
 .delete-btn {
@@ -96,8 +105,23 @@
 .goal-item {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #eee;
-  border-radius: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.add-goal-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.add-goal-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
 }
 
 .goal-header {
@@ -105,6 +129,17 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.goal-text {
+  color: #ffffff;
+}
+
+.goal-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  background: #1b1b1b;
 }
 
 .progress-container {
@@ -135,10 +170,14 @@
 
 .progress-controls button {
   padding: 5px 10px;
-  border: 1px solid #ddd;
-  background: white;
+  color: white;
+  background: #007bff;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.progress-text {
+  color: #ffffff;
 }
 
 /* Quotes */
@@ -151,18 +190,18 @@
   font-style: italic;
   font-size: 1.1em;
   margin: 0 0 10px 0;
-  color: #555;
+  color: #ffffff;
 }
 
 .quote-content cite {
-  color: #888;
+  color: #ffffff;
   font-size: 0.9em;
 }
 
 .new-quote-btn {
   width: 100%;
   padding: 10px;
-  background: #17a2b8;
+  background: #007bff;
   color: white;
   border: none;
   border-radius: 5px;

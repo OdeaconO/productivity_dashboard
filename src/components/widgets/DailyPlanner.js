@@ -26,7 +26,9 @@ export default function DailyPlanner() {
           placeholder="Add a new task..."
           className="task-input"
         />
-        <button type="submit">Add</button>
+        <button class="add-task-button" type="submit">
+          Add
+        </button>
       </form>
 
       <div className="tasks-list">

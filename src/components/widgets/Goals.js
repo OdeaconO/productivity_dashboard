@@ -26,7 +26,9 @@ export default function Goals() {
           placeholder="Add a new goal..."
           className="goal-input"
         />
-        <button type="submit">Add</button>
+        <button class="add-goal-button" type="submit">
+          Add
+        </button>
       </form>
 
       <div className="goals-list">
@@ -51,8 +53,18 @@ export default function Goals() {
               <span className="progress-text">{goal.progress}%</span>
             </div>
             <div className="progress-controls">
-              <button onClick={() => updateProgress(goal.id, -10)}>-10%</button>
-              <button onClick={() => updateProgress(goal.id, 10)}>+10%</button>
+              <button
+                class="goal-btn"
+                onClick={() => updateProgress(goal.id, -10)}
+              >
+                -10%
+              </button>
+              <button
+                class="goal-btn"
+                onClick={() => updateProgress(goal.id, 10)}
+              >
+                +10%
+              </button>
             </div>
           </div>
         ))}
