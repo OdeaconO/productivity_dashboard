@@ -1,0 +1,50 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  color: #333;
+  margin: 0;
+}
+
+.customize-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.widgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.widget-container.small {
+  grid-column: span 1;
+}
+
+.widget-container.medium {
+  grid-column: span 1;
+}
+
+.widget-container.large {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .widget-container.large {
+    grid-column: span 1;
+  }
+}
