@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 
-const MOCK_GOALS = [
-  { id: 1, text: "Learn React Hooks", progress: 75 },
-  { id: 2, text: "Complete Portfolio", progress: 40 },
-  { id: 3, text: "Read 12 books this year", progress: 60 },
-];
+const MOCK_GOALS = [];
 
 export function useGoals() {
   const [goals, setGoals] = useState(() => {

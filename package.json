@@ -1,6 +1,8 @@
 {
   "name": "productivity-dashboard",
   "version": "0.1.0",
+  "main": "main.js",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -16,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-electron": "electron ."
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^37.2.4"
   }
 }

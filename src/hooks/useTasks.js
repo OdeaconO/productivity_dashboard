@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
 
-const MOCK_TASKS = [
-  { id: 1, text: "Review project proposal", completed: false },
-  { id: 2, text: "Call client about meeting", completed: true },
-  { id: 3, text: "Update portfolio website", completed: false },
-  { id: 4, text: "Prepare presentation slides", completed: false },
-];
+const MOCK_TASKS = [];
 
 export function useTasks() {
   const [tasks, setTasks] = useState(() => {
