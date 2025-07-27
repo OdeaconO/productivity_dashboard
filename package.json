@@ -1,6 +1,8 @@
 {
   "name": "productivity-dashboard",
   "version": "0.1.0",
+  "description": "A personal productivity dashboard with Pomodoro timer, task planner, goals tracker, and motivational quotes",
+  "author": "Your Name <your.email@example.com>",
   "main": "main.js",
   "build": {
     "appId": "com.productivity.dashboard",
@@ -20,7 +22,8 @@
     },
     "linux": {
       "target": "AppImage",
-      "icon": "assets/icon"
+      "icon": "assets/icon.png",
+      "category": "Utility"
     }
   },
   "homepage": "./",
@@ -75,7 +78,6 @@
     "concurrently": "^7.6.0",
     "electron": "^37.2.4",
     "electron-builder": "^26.0.12",
-    "electron-is-dev": "^2.0.0",
     "wait-on": "^7.2.0"
   }
 }
