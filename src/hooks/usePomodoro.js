@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
-const WORK_TIME = 1 * 60; // 25 minutes
-const BREAK_TIME = 1 * 60; // 5 minutes
+const WORK_TIME = 25 * 60; // 25 minutes
+const BREAK_TIME = 5 * 60; // 5 minutes
 
 export function usePomodoro() {
   const [timeLeft, setTimeLeft] = useState(WORK_TIME);
