@@ -50,6 +50,13 @@
   cursor: pointer;
 }
 
+.session-counter {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 0.95em;
+}
+
 /* Daily Planner */
 .add-task-form {
   display: flex;
@@ -100,6 +107,25 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+
+.tasks-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.tasks-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tasks-list::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.tasks-list::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /* Goals */

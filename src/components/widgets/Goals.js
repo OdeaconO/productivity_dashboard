@@ -54,7 +54,7 @@ export default function Goals() {
             </div>
             <div className="progress-controls">
               <button
-                classname="goal-btn"
+                className="goal-btn"
                 onClick={() => updateProgress(goal.id, -10)}
               >
                 -10%
