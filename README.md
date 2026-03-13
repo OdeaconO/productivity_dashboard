@@ -2,6 +2,8 @@
 
 The Productivity Dashboard is a personal productivity tool designed to help users stay focused, plan effectively, and stay motivated throughout the day. It features four customizable widgets, each targeting a different aspect of personal productivity, along with a customization panel to tailor the dashboard to individual preferences.
 
+## 🌐 Live Application: [kinbenna.netlify.app](https://kinbenna.netlify.app/)
+
 ## ✅ Features
 
 ### ⏲️ Pomodoro Timer
