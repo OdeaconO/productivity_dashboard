@@ -9,6 +9,8 @@ export function usePomodoro() {
   const [isBreak, setIsBreak] = useState(false);
   const intervalRef = useRef(null);
 
+  const startTimeRef = useRef(null);
+
   const [isRinging, setIsRinging] = useState(false);
   const audioRef = useRef(null);
 
@@ -41,7 +43,13 @@ export function usePomodoro() {
     if (!isActive) return;
 
     intervalRef.current = setInterval(() => {
-      setTimeLeft((time) => time - 1);
+      const elapsed = Math.floor((Date.now() - startTimeRef.current) / 1000);
+
+      setTimeLeft((prev) => {
+        const newTime = Math.max(prev - elapsed, 0);
+        startTimeRef.current = Date.now(); // reset reference
+        return newTime;
+      });
     }, 1000);
 
     return () => clearInterval(intervalRef.current);
@@ -80,7 +88,10 @@ export function usePomodoro() {
     });
   }, [timeLeft, isActive]);
 
-  const start = () => setIsActive(true);
+  const start = () => {
+    startTimeRef.current = Date.now();
+    setIsActive(true);
+  };
   const pause = () => setIsActive(false);
   const reset = () => {
     clearInterval(intervalRef.current);
