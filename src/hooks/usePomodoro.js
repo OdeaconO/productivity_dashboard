@@ -45,15 +45,14 @@ export function usePomodoro() {
     intervalRef.current = setInterval(() => {
       const elapsed = Math.floor((Date.now() - startTimeRef.current) / 1000);
 
-      setTimeLeft((prev) => {
-        const newTime = Math.max(prev - elapsed, 0);
-        startTimeRef.current = Date.now(); // reset reference
-        return newTime;
-      });
+      const totalTime = isBreak ? BREAK_TIME : WORK_TIME;
+      const newTime = Math.max(totalTime - elapsed, 0);
+
+      setTimeLeft(newTime);
     }, 1000);
 
     return () => clearInterval(intervalRef.current);
-  }, [isActive]);
+  }, [isActive, isBreak]);
 
   useEffect(() => {
     if (timeLeft !== 0) {
@@ -92,6 +91,7 @@ export function usePomodoro() {
     startTimeRef.current = Date.now();
     setIsActive(true);
   };
+
   const pause = () => setIsActive(false);
   const reset = () => {
     clearInterval(intervalRef.current);
